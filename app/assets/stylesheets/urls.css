@@ -2,3 +2,15 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.title {
+  font-family: 'Audiowide', cursive;
+  /*color: white;*/
+}
+
+#url_url {
+  margin-bottom: 30px;
+}
+
+.table-head{
+  font-size: 1.5em;
+}

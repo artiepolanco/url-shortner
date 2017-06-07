@@ -1,11 +1,13 @@
 body {
-  background-color: #fff;
+  background: #77A1D3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #333;
   margin: 33px;
 }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: Audiowide, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
