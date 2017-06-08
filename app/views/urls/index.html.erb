@@ -14,8 +14,11 @@
     <% @urls.each do |url| %>
       <tr>
         <td><%= url.url %></td>
-        <td> <a href="/urls/<%= url.id%>" target="_blank"> https://polar-retreat-14918.herokuapp.com/<%=url.id%> </a> </td>
 
+        <td><input class="target" value="https://polar-retreat-14918.herokuapp.com/urls<%=url.id%> "></td>
+        <td><button class="copy-button btn btn-default" >Copy Link</button>
+</td>
+https://polar-retreat-14918.herokuapp.com/urls
       </tr>
 
     <% end %>
@@ -24,6 +27,8 @@
 
 <br>
 
+<!-- <input type="text" id="copyTarget1" value="Text to Copy"> <button id="copyButton1">Copy</button><br><br>
+<input type="text" placeholder="Click here and press Ctrl-V to see clipboard contents"> -->
 
 
 <%= render 'form', url: @url %>
