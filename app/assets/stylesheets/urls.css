@@ -14,3 +14,7 @@
 .table-head{
   font-size: 1.5em;
 }
+
+.table {
+  width: 25%;
+}

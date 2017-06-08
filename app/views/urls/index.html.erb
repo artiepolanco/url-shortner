@@ -2,6 +2,8 @@
 
 <h1 class="title">Free URL shortner</h1>
 
+<%= render 'form', url: @url %>
+
 <table class="table table-hover">
   <thead>
     <tr>
@@ -11,13 +13,16 @@
   </thead>
 
   <tbody>
-    <% @urls.each do |url| %>
+    <% @urls.reverse.each do |url| %>
       <tr>
-        <td><%= url.url %></td>
+        <td class="url" ><%= url.url %></td>
 
-        <td><input class="target" value="https://polar-retreat-14918.herokuapp.com/urls/<%=url.id%> "></td>
+        <td><input class="target" value="https://polar-retreat-14918.herokuapp.com/urls/<%=url.id%> ">
+        </td>
+
         <td><button class="copy-button btn btn-default" >Copy Link</button>
-</td>
+        </td>
+        
       </tr>
 
     <% end %>
@@ -28,6 +33,3 @@
 
 <!-- <input type="text" id="copyTarget1" value="Text to Copy"> <button id="copyButton1">Copy</button><br><br>
 <input type="text" placeholder="Click here and press Ctrl-V to see clipboard contents"> -->
-
-
-<%= render 'form', url: @url %>

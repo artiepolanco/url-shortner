@@ -6,7 +6,7 @@ body {
   margin: 33px;
 }
 
-body, p, ol, ul, td {
+body, p, ol, ul{
   font-family: Audiowide, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
