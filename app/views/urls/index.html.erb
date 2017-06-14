@@ -1,35 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <h1 class="title">Free URL shortner</h1>
+</div>
 
-<h1 class="title">Free URL shortner</h1>
+<form class="inputurl" action="index.html" method="post">
+  <div class="container form-group">
+    <%= render 'form', url: @url %>
+  </div>
+</form>
 
-<%= render 'form', url: @url %>
 
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th class="table-head">Long Url</th>
-      <th colspan="3" class="table-head">Short Url</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @urls.reverse.each do |url| %>
+<div class="table-responsive container">
+  <table class="table table-hover">
+    <thead>
       <tr>
-        <td class="url" ><%= url.url %></td>
-
-        <td><input class="target" value="https://polar-retreat-14918.herokuapp.com/urls/<%=url.id%> ">
-        </td>
-
-        <td><button class="copy-button btn btn-default" >Copy Link</button>
-        </td>
-        
+        <th class="table-head">Long Url</th>
+        <th colspan="3" class="table-head">Short Url</th>
       </tr>
+    </thead>
+    <tbody>
+      <% @urls.reverse.each do |url| %>
+        <tr>
+          <td class="url" ><%= url.url %></td>
+          <td><input class="target" value="https://polar-retreat-14918.herokuapp.com/urls/<%=url.id%> ">
+          </td>
+          <td><button class="copy-button btn btn-default" >Copy Link</button>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
-    <% end %>
-  </tbody>
-</table>
-
-<br>
 
 <!-- <input type="text" id="copyTarget1" value="Text to Copy"> <button id="copyButton1">Copy</button><br><br>
 <input type="text" placeholder="Click here and press Ctrl-V to see clipboard contents"> -->
