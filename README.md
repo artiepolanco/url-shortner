@@ -1,24 +1,13 @@
-# README
+# URL Shortner
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+URL shortner built with Rails as a project while attending [Wyncode](https://wyncode.co/). It actually works and so does the copy to clipboard button!
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+The app is live on Heroku. Just click [here!](https://polar-retreat-14918.herokuapp.com/)
 
-* System dependencies
+## Built With
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Rails](http://rubyonrails.org/) - Framework
+* [Bootstrap](http://getbootstrap.com/) - Styling
+* [jQuery](http://jquery.com/) - Copy Link button
